@@ -19,12 +19,20 @@ application3 = JobApplication(
     83000,
     "Interviewed"
 )
-application3.display_application()
+
+application4 = JobApplication(
+    "State Job",
+    "Anaylst 2",
+    70000,
+    "Applied"
+)
 
 application1.display_application()
 
 application2.display_application()
 
 application3.display_application()
+
+application4.display_application()
 
 print()
