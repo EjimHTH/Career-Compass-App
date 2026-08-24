@@ -1,15 +1,13 @@
-add_application()
+from job_application import JobApplication
 
-remove_application()
 
-search_company()
+class FullTimeJob(JobApplication):
+    def __init__(self, company, position, salary, status, benefits):
+        super().__init__(company, position, salary, status)
+        self.benefits = benefits
 
-update_status()
-
-display_all()
-
-count_applications()
-
-pending_applications()
-
-self.applications = []
+    def display_application(self):
+        print(f"{self.company} - {self.position}")
+        print(f"Salary: ${self.salary:,}")
+        print(f"Status: {self.status}")
+        print(f"Benefits: {self.benefits}")
